@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Alexander Robbins</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Alexander Robbins</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="./images/Alexander Robbins Resume Feb 2026.pdf" target="_blank" class="nav__link">Resume</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="contact.html" class="nav__link">Contact Me</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════
+       CONTACT SECTION
+       ICONS: Place your gmail and linkedin icon image
+       files into ./images/ and update the src below.
+       The Font Awesome fallback icons are displayed
+       if no image is provided — both will look great.
+
+       Gmail icon file:    ./images/gmail-icon.png
+       LinkedIn icon file: ./images/linkedin-icon.png
+       ═══════════════════════════════════════════════ -->
+  <main class="contact-page">
+    <div class="container">
+
+      <div class="contact-header">
+        <h1 class="section-title">Get in <span>Touch</span></h1>
+        <p class="section-subtitle">
+          Open to collaborations, projects, and interesting conversations.
+        </p>
+      </div>
+
+      <div class="contact-cards">
+
+        <!-- ── LinkedIn Card ── -->
+        <a
+          href="https://www.linkedin.com/in/alexander-h-robbins"
+          target="_blank"
+          class="contact-card contact-card--linkedin reveal"
+          aria-label="LinkedIn Profile"
+        >
+          <div class="contact-card__icon-wrap">
+              <img src="./images/linkedIN.png" alt="LinkedIn" class="contact-card__icon-img">
+            <i class="fab fa-linkedin contact-card__icon-fa"></i>
+          </div>
+          <span class="contact-card__label">LinkedIn</span>
+          <span class="contact-card__value">alexander-h-robbins</span>
+          <span class="contact-card__cta">
+            View Profile <i class="fas fa-arrow-right"></i>
+          </span>
+        </a>
+
+        <!-- ── Gmail / Email Card ── -->
+        <a
+          href="mailto:alexanderrobbins@gmail.com"
+          class="contact-card contact-card--gmail reveal reveal--delay-2"
+          aria-label="Send Email"
+        >
+          <div class="contact-card__icon-wrap">
+            <img src="./images/Gmail-Logo-2013-2020.png" alt="Gmail" class="contact-card__icon-img">
+            <i class="fas fa-envelope contact-card__icon-fa"></i>
+          </div>
+          <span class="contact-card__label">Email</span>
+          <span class="contact-card__value">alexanderrobbins@gmail.com</span>
+          <span class="contact-card__cta">
+            Send a Message <i class="fas fa-arrow-right"></i>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer__inner">
+      <a href="#" class="footer__logo-wrap" aria-label="Back to top">
+        <img src="./images/tuftsbarber.png" alt="TuftsBarber" class="footer__logo-img">
+        <span class="footer__back-top">↑ Back to Top</span>
+      </a>
+      <nav class="footer__links">
+        <a href="index.html"    class="footer__link">Home</a>
+        <a href="aboutme.html"  class="footer__link">About</a>
+        <a href="projects.html" class="footer__link">Projects</a>
+        <a href="./images/Alexander Robbins Resume Feb 2026.pdf" target="_blank" class="footer__link">Resume</a>
+      </nav>
+      <div class="footer__divider"></div>
+      <p class="footer__copyright">Copyright &copy; 2026 Alexander Robbins</p>
+    </div>
+  </footer>
+
+  <script>
+    const navbar    = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('.nav__link').forEach(l =>
+      l.addEventListener('click', () => navLinks.classList.remove('open'))
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

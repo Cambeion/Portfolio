@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Alexander Robbins</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Alexander Robbins</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="./images/Alexander Robbins Resume Feb 2026.pdf" target="_blank" class="nav__link">Resume</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="contact.html" class="nav__link">Contact Me</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════
+       PROJECTS PAGE
+       HOW PROJECT CARDS WORK:
+       - Each card has a background image (replace placeholder)
+       - At rest: title + tags are visible at the bottom
+       - On hover: description slides up; title fades out
+       - Clicking the whole card follows the <a href> link
+       
+       TO ADD A NEW PROJECT:
+       1. Copy any .project-card block
+       2. Replace the img src
+       3. Update title, tags, description text
+       4. Replace the href="#" with your PDF/link
+       ═══════════════════════════════════════════════ -->
+  <main class="projects-page">
+    <div class="container">
+
+      <!-- Page header -->
+      <div class="projects-header">
+        <h1 class="section-title">My <span>Projects</span></h1>
+        <p class="section-subtitle">
+          Engineering work spanning robotics, product design, simulation, and manufacturing
+        </p>
+      </div>
+
+      <!-- ── 3-Column Project Grid ── -->
+      <div class="projects-grid">
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 1: Paragon Golf Shaft
+             REPLACE: image, href
+        ────────────────────────────────────────── -->
+        <a
+          href="#"
+          class="project-card reveal"
+          aria-label="Paragon Golf Shaft Mechanism"
+          target="_blank"
+        >
+          <!-- REPLACE: ./images/paragon.jpg -->
+          <img src="./images/paragondiagram.png" alt="Paragon Golf Shaft" class="project-card__img">
+          <div class="project-card__base-overlay"></div>
+          <div class="project-card__hover-overlay"></div>
+
+          <!-- Title bar (visible at rest) -->
+          <div class="project-card__title-bar">
+            <h3 class="project-card__title">Paragon Golf Shaft</h3>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Manufacturing</span>
+              <span class="project-card__tag">Product Design</span>
+            </div>
+          </div>
+
+          <!-- Description (slides up on hover) -->
+          <div class="project-card__desc">
+            <p class="project-card__desc-text">
+              A collet locking sleeve
+              to make a golf shaft modular and detachable, eliminating travel and storage
+              concerns while partnering with OEM manufacturers and major golf brands.
+            </p>
+            <span class="project-card__action">
+              View Project <i class="fas fa-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 2: Aircraft Turbine Blade
+             REPLACE: image, href
+        ────────────────────────────────────────── -->
+        <a
+          href="#"
+          class="project-card reveal reveal--delay-1"
+          aria-label="Aircraft Turbine Blade"
+          target="_blank"
+        >
+          <!-- REPLACE: ./images/turbine-blade.jpg -->
+          <img src="./images/turbineblade.jpg" alt="Aircraft Turbine Blade" class="project-card__img">
+          <div class="project-card__base-overlay"></div>
+          <div class="project-card__hover-overlay"></div>
+
+          <div class="project-card__title-bar">
+            <h3 class="project-card__title">Aircraft Turbine Blade</h3>
+            <div class="project-card__tags">
+              <span class="project-card__tag">AutoCAD</span>
+              <span class="project-card__tag">COMSOL</span>
+              <span class="project-card__tag">CFD</span>
+            </div>
+          </div>
+
+          <div class="project-card__desc">
+            <p class="project-card__desc-text">
+              Modeled in AutoCAD,
+              simulated flow in COMSOL, and optimized film cooling hole placement to improve
+              thermal performance and blade longevity.
+            </p>
+            <span class="project-card__action">
+              View Project <i class="fas fa-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 3: Proofing Box
+             REPLACE: image, href
+        ────────────────────────────────────────── -->
+        <a
+          href="#"
+          class="project-card reveal reveal--delay-2"
+          aria-label="Proofing Box"
+          target="_blank"
+        >
+          <!-- REPLACE: ./images/proofing-box.jpg -->
+          <img src="./images/proofingbox.jpg" alt="Proofing Box" class="project-card__img">
+          <div class="project-card__base-overlay"></div>
+          <div class="project-card__hover-overlay"></div>
+
+          <div class="project-card__title-bar">
+            <h3 class="project-card__title">Proofing Box</h3>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Python</span>
+              <span class="project-card__tag">Electronics</span>
+              <span class="project-card__tag">Control Systems</span>
+            </div>
+          </div>
+
+          <div class="project-card__desc">
+            <p class="project-card__desc-text">
+              Controlled temperature
+              and humidity via sensors for precision environmental and process stability testing.
+              Uses thermoelectric heating and a continual feedback loop.
+            </p>
+            <span class="project-card__action">
+              View Project <i class="fas fa-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 4: Car Sun Visor Augmentation
+             REPLACE: image, href
+        ────────────────────────────────────────── -->
+        <a
+          href="#"
+          class="project-card reveal"
+          aria-label="Car Sun Visor Augmentation"
+          target="_blank"
+        >
+          <!-- REPLACE: ./images/sunvisor.jpg -->
+          <img src="./images/sunvisor.webp" alt="Car Sun Visor Augmentation" class="project-card__img">
+          <div class="project-card__base-overlay"></div>
+          <div class="project-card__hover-overlay"></div>
+
+          <div class="project-card__title-bar">
+            <h3 class="project-card__title">Car Sun Visor Augmentation</h3>
+            <div class="project-card__tags">
+              <span class="project-card__tag">3D Printing</span>
+              <span class="project-card__tag">Optics</span>
+              <span class="project-card__tag">UX Research</span>
+            </div>
+          </div>
+
+          <div class="project-card__desc">
+            <p class="project-card__desc-text">
+              Improved the current
+              design through user and manufacturer input to span the entire windshield,
+              eliminating sun blindness with 3D-printed joints and a moveable blackout circle.
+            </p>
+            <span class="project-card__action">
+              View Project <i class="fas fa-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 5: Engineers Without Borders
+             REPLACE: image, href
+        ────────────────────────────────────────── -->
+        <a
+          href="#"
+          class="project-card reveal reveal--delay-1"
+          aria-label="Engineers Without Borders Local Project"
+          target="_blank"
+        >
+          <!-- REPLACE: ./images/ewb.jpg -->
+          <img src="./images/ewblogo.jpg" alt="Engineers Without Borders" class="project-card__img">
+          <div class="project-card__base-overlay"></div>
+          <div class="project-card__hover-overlay"></div>
+
+          <div class="project-card__title-bar">
+            <h3 class="project-card__title">Engineers Without Borders</h3>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Structural Design</span>
+              <span class="project-card__tag">SHM Sensors</span>
+            </div>
+          </div>
+
+          <div class="project-card__desc">
+            <p class="project-card__desc-text">
+              Designing and testing
+              a 12-ton capacity platform with structural health sensor integration to support
+              a food pantry's walk-in fridge at Tufts.
+            </p>
+            <span class="project-card__action">
+              View Project <i class="fas fa-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!-- ──────────────────────────────────────────
+             PROJECT 6: MONOLiTH
+             REPLACE: image, href
+        ────────────────────────────────────────── -->
+        <a
+          href="https://par.nsf.gov/servlets/purl/10316323"
+          class="project-card reveal reveal--delay-2"
+          aria-label="MONOLiTH Robot"
+          target="_blank"
+        >
+          <!-- REPLACE: ./images/monolith.jpg -->
+          <img src="./images/monolith.png" alt="MONOLiTH Robot" class="project-card__img">
+          <div class="project-card__base-overlay"></div>
+          <div class="project-card__hover-overlay"></div>
+
+          <div class="project-card__title-bar">
+            <h3 class="project-card__title">MONOLiTH</h3>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Robotics</span>
+              <span class="project-card__tag">Python</span>
+              <span class="project-card__tag">DARPA</span>
+            </div>
+          </div>
+
+          <div class="project-card__desc">
+            <p class="project-card__desc-text">
+              Autonomizing and testing
+              a deployable biomimetic robot based on a caterpillar model. Designing sensor
+              placement, manufacturing differential friction elements, and integrating Python
+              code with clutch motors. Collaborating with Boston Dynamics and DARPA mentors.
+            </p>
+            <span class="project-card__action">
+              View Project <i class="fas fa-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+
+        <!-- ──────────────────────────────────────────
+             FUTURE PROJECT PLACEHOLDER
+             Duplicate this block to add more projects
+        ────────────────────────────────────────── -->
+        <!--
+        <a href="#" class="project-card" target="_blank">
+          <img src="./images/project-name.jpg" alt="Project Name" class="project-card__img">
+          <div class="project-card__base-overlay"></div>
+          <div class="project-card__hover-overlay"></div>
+          <div class="project-card__title-bar">
+            <h3 class="project-card__title">Project Title</h3>
+            <div class="project-card__tags">
+              <span class="project-card__tag">Tag One</span>
+              <span class="project-card__tag">Tag Two</span>
+            </div>
+          </div>
+          <div class="project-card__desc">
+            <p class="project-card__desc-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Replace with your project description.
+            </p>
+            <span class="project-card__action">
+              View Project <i class="fas fa-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+        -->
+
+      </div><!-- /projects-grid -->
+    </div><!-- /container -->
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer__inner">
+      <a href="#" class="footer__logo-wrap" aria-label="Back to top">
+        <img src="./images/tuftsbarber.png" alt="TuftsBarber" class="footer__logo-img">
+        <span class="footer__back-top">↑ Back to Top</span>
+      </a>
+      <nav class="footer__links">
+        <a href="index.html"    class="footer__link">Home</a>
+        <a href="aboutme.html"  class="footer__link">About</a>
+        <a href="./images/Alexander Robbins Resume Feb 2026.pdf" target="_blank" class="footer__link">Resume</a>
+        <a href="https://www.linkedin.com/in/alexander-h-robbins" target="_blank" class="footer__link">LinkedIn</a>
+        <a href="mailto:alexanderrobbins@gmail.com" class="footer__link">Email</a>
+      </nav>
+      <div class="footer__divider"></div>
+      <p class="footer__copyright">Copyright &copy; 2026 Alexander Robbins</p>
+    </div>
+  </footer>
+
+  <script>
+    const navbar    = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('.nav__link').forEach(l =>
+      l.addEventListener('click', () => navLinks.classList.remove('open'))
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.10 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me — Alexander Robbins</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Alexander Robbins</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html"    class="nav__link">Home</a></li>
+        <li><a href="./images/Alexander Robbins Resume Feb 2026.pdf" target="_blank" class="nav__link">Resume</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="contact.html" class="nav__link">Contact Me</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════
+       ABOUT HERO — Photo + Bio
+       ═══════════════════════════════════════════════ -->
+  <section class="about-hero">
+    <div class="about-hero__inner">
+
+      <!-- Portrait photo -->
+      <div class="about-hero__photo-wrap">
+        <img
+          src="./images/smilely.JPG"
+          alt="Alexander Robbins"
+          class="about-hero__photo"
+        >
+        <div class="about-hero__photo-accent"></div>
+      </div>
+
+      <!-- Bio text -->
+      <div class="about-hero__text">
+        <p class="about-hero__eyebrow">Nice to Meet You</p>
+        <h1 class="about-hero__name">I'm Alexander<br>Robbins.</h1>
+        <p class="about-hero__bio">
+          A mechanical engineering and applied mathematics student at Tufts University focused on
+          designing solutions to interesting and applicable problems. My work spans control systems engineering, product design, and
+          government contracting.
+        </p>
+        <p class="about-hero__bio">
+          I approach every problem with both analytical rigor and hands-on curiosity for the world around me. 
+          Whether that's autonomizing a biomimetic robot, designing a modular golf shaft,
+          or building precision environmental control systems from scratch.
+        </p>
+        <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:24px;">
+          <a href="projects.html" class="btn btn--primary">My Projects</a>
+          <a href="./images/Alexander Robbins Resume Feb 2026.pdf" target="_blank" class="btn btn--outline">Download Resume</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SKILLS — tag chip style
+       Add or remove <span class="skill-tag"> to
+       update any category at any time
+       ═══════════════════════════════════════════════ -->
+  <section class="skills-section section--cream">
+    <div class="container">
+      <h2 class="section-title">Skills &amp; <span>More</span></h2>
+      <p class="section-subtitle">Tools and disciplines I work with</p>
+
+      <div class="skills__categories">
+
+        <!-- Technical Skills -->
+        <div class="skills__category reveal">
+          <h3 class="skills__category-title">
+            <i class="fas fa-wrench"></i> Technical
+          </h3>
+          <div class="skills__tags">
+            <span class="skill-tag">Composite Material Manufacturing</span>
+            <span class="skill-tag">Robotic Control System Design</span>
+            <span class="skill-tag">Machine Shop</span>
+            <span class="skill-tag">Welding</span>
+            <span class="skill-tag">Digital Electronics</span>
+            <span class="skill-tag">Woodworking</span>
+            <span class="skill-tag">Prototyping</span>
+            <span class="skill-tag">Digital Electronics</span>
+          </div>
+        </div>
+
+        <!-- Software -->
+        <div class="skills__category reveal reveal--delay-1">
+          <h3 class="skills__category-title">
+            <i class="fas fa-desktop"></i> Software
+          </h3>
+          <div class="skills__tags">
+            <span class="skill-tag">ANSYS</span>
+            <span class="skill-tag">SolidWorks</span>
+            <span class="skill-tag">COMSOL Multiphysics</span>
+            <span class="skill-tag">AutoCAD</span>
+            <span class="skill-tag">PIV Analysis</span>
+            <span class="skill-tag">SAM.gov</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Microsoft Office Suite</span>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="skills__category reveal reveal--delay-2">
+          <h3 class="skills__category-title">
+            <i class="fas fa-code"></i> Languages
+          </h3>
+          <div class="skills__tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">Conversational Spanish</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FUN FACTS
+       ═══════════════════════════════════════════════ -->
+  <section class="funfacts section">
+    <div class="container">
+      <h2 class="section-title">Beyond <span>Engineering</span></h2>
+      <p class="section-subtitle">A few things that make me, me</p>
+
+      <div class="funfacts__grid">
+
+        <!-- Water Polo -->
+        <div class="funfact-card reveal">
+          <span class="funfact-card__icon">🤽</span>
+          <h3 class="funfact-card__title">Water Polo</h3>
+          <p class="funfact-card__desc">
+            Tufts Men's Club water polo - a drinking team with a waterpolo problem
+          </p>
+        </div>
+
+        <!-- Sauna -->
+        <div class="funfact-card reveal reveal--delay-1">
+          <span class="funfact-card__icon">🧖</span>
+          <h3 class="funfact-card__title">Avid Sauna Enjoyer</h3>
+          <p class="funfact-card__desc">
+            Essential oils, viking hat, and cold water to throw on the stones. Personal best is 27 minutes.
+          </p>
+        </div>
+
+        <!-- TuftsBarber -->
+        <div class="funfact-card funfact-card--barber reveal reveal--delay-2">
+          <!-- TuftsBarber logo — REPLACE ./images/tuftsbarber.png -->
+          <div class="funfact-card__logo-wrap">
+            <img src="./images/tuftsbarber.png" alt="TuftsBarber Logo">
+          </div>
+          <h3 class="funfact-card__title">The TuftsBarber</h3>
+          <p class="funfact-card__desc">
+            Great way to make and lose friends is by cutting their hair. Cheap, unisex, and prone to 'creative' interpretations of your style
+          </p>
+        </div>
+
+        <!-- Gardening -->
+        <div class="funfact-card reveal reveal--delay-3">
+          <span class="funfact-card__icon">🌱</span>
+          <h3 class="funfact-card__title">Gardening</h3>
+          <p class="funfact-card__desc">
+            In theory I have a green thumb. Mostly dorm flowers and my summer vegetable garden that yields 3 tomatoes.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       PHOTO COLLAGE
+       HOW TO USE: Replace each .collage-item with an
+       <img src="./images/[your-photo].jpg"> inside the div.
+       The first item spans 2 columns for visual variety.
+       ═══════════════════════════════════════════════ -->
+  <section class="collage-section section--alt">
+    <div class="container">
+      <h2 class="section-title">A Glimpse of <span>My World</span></h2>
+
+      <div class="collage-grid">
+
+        <!-- REPLACE EACH: add <img src="./images/photo.jpg" alt="..."> inside -->
+        <div class="collage-item collage-item--wide">
+        <img src="./images/bath3.jpeg"> 
+        </div>
+        <div class="collage-item">
+        <img src="./images/ewb.jpg">        
+        </div>
+        <div class="collage-item">
+        <img src="./images/blackqzip.jpeg">        
+        </div>
+        <div class="collage-item collage-item--wide">
+        <img src="./images/billards.jpeg">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer__inner">
+      <a href="#" class="footer__logo-wrap" aria-label="Back to top">
+        <img src="./images/tuftsbarber.png" alt="TuftsBarber" class="footer__logo-img">
+        <span class="footer__back-top">↑ Back to Top</span>
+      </a>
+      <nav class="footer__links">
+        <a href="index.html"    class="footer__link">Home</a>
+        <a href="projects.html" class="footer__link">Projects</a>
+        <a href="./images/Alexander Robbins Resume Feb 2026.pdf" target="_blank" class="footer__link">Resume</a>
+        <a href="https://www.linkedin.com/in/alexander-h-robbins" target="_blank" class="footer__link">LinkedIn</a>
+        <a href="mailto:alexanderrobbins@gmail.com" class="footer__link">Email</a>
+      </nav>
+      <div class="footer__divider"></div>
+      <p class="footer__copyright">Copyright &copy; 2026 Alexander Robbins</p>
+    </div>
+  </footer>
+
+  <script>
+    const navbar    = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('.nav__link').forEach(l =>
+      l.addEventListener('click', () => navLinks.classList.remove('open'))
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

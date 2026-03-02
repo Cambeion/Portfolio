@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander Robbins — Mechanical Engineer</title>
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav__inner">
+      <!-- Left: Name -->
+      <a href="index.html" class="nav__logo">Alexander Robbins</a>
+
+      <!-- Right: Links -->
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html"   class="nav__link">Home</a></li>
+        <li><a href="./images/Alexander Robbins Resume Feb 2026.pdf" target="_blank" class="nav__link">Resume</a></li>
+        <li><a href="projects.html" class="nav__link">Projects</a></li>
+        <li><a href="contact.html" class="nav__link">Contact Me</a></li>
+      </ul>
+
+      <!-- Mobile hamburger -->
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════
+       HERO — full-screen background photo
+       REPLACE: swap ./images/hero-bg.jpg with your
+       preferred background photo
+       ═══════════════════════════════════════════════ -->
+  <section class="hero">
+    <!-- Background image — REPLACE src with your photo -->
+    <div class="hero__bg" style="background-image: url('./images/legos.JPEG');"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Mechanical Engineer &amp; Applied Mathematician</p>
+
+      <h1 class="hero__name">
+        Alexander<br><em>Robbins</em>
+      </h1>
+
+      <p class="hero__blurb">
+        A mechanical engineering and applied mathematics student at Tufts University
+        with experience in control systems engineering, product design, and government contracting.
+      </p>
+
+      <div class="hero__cta">
+        <a href="projects.html" class="btn btn--primary">
+          View Projects <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="aboutme.html" class="btn btn--outline" style="color: rgba(255,255,255,0.9); border-color: rgba(255,255,255,0.5);">
+          About Me
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       EXPERIENCE — company logo strip
+       HOW TO USE: Inside each .logo-placeholder div,
+       add an <img src="./images/company-logo.png">
+       and remove the <span> text. The grey box will
+       disappear and your logo will fill the space.
+       ═══════════════════════════════════════════════ -->
+  <section class="experience">
+    <div class="experience__label">Experience</div>
+    <div class="experience__logos">
+
+      <!-- REPLACE EACH: add <img src="./images/[logo].png"> inside, remove <span> -->
+      <div class="logo-placeholder">
+        <img src="./images/rtxlogo.png">
+      </div>
+      <div class="logo-placeholder">
+        <img src="./images/oxbow.png">
+      </div>
+      <div class="logo-placeholder">
+        <img src="./images/tuftslogo.png">      
+    </div>
+      <div class="logo-placeholder">
+        <img src="./images/ewblogo.jpg">      
+    </div>
+      <div class="logo-placeholder">
+        <img src="./images/dhhslogo.png">      
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FEATURED PROJECTS
+       Three highlighted projects on the home page
+       ═══════════════════════════════════════════════ -->
+  <section class="featured section">
+    <div class="container">
+      <h2 class="section-title">Featured <span>Work</span></h2>
+      <p class="section-subtitle">A selection of projects I'm proud of</p>
+
+      <div class="featured__grid">
+
+        <!-- ── Featured Card 1: MONOLiTH ── -->
+        <div class="featured-card reveal">
+          <div class="featured-card__img-wrap">
+            <!-- REPLACE: ./images/monolith.jpg -->
+            <img src="./images/monolith.png" alt="MONOLiTH Robot">
+            <span class="featured-card__badge">Robotics</span>
+          </div>
+          <div class="featured-card__body">
+            <h3 class="featured-card__title">MONOLiTH</h3>
+            <p class="featured-card__desc">
+              Autonomizing and testing a deployable biomimetic robot based on a caterpillar
+              model for mission support. Collaborating with Boston Dynamics and DARPA mentors
+              to develop bio-inspired robotic control systems.
+            </p>
+            <!-- REPLACE href with link to project report or page -->
+            <a href="https://par.nsf.gov/servlets/purl/10316323" class="featured-card__link">
+              View Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ── Featured Card 2: Car Sun Visor ── -->
+        <div class="featured-card reveal reveal--delay-2">
+          <div class="featured-card__img-wrap">
+            <!-- REPLACE: ./images/sunvisor.jpg -->
+            <img src="./images/sunvisor.webp" alt="Car Sun Visor Augmentation">
+            <span class="featured-card__badge">Product Design</span>
+          </div>
+          <div class="featured-card__body">
+            <h3 class="featured-card__title">Car Sun Visor Augmentation</h3>
+            <p class="featured-card__desc">
+              Improved the current sun visor design through user and manufacturer input to
+              span the entire windshield, eliminating driver sun blindness with 3D-printed
+              joints and a movable blackout panel.
+            </p>
+            <!-- REPLACE href -->
+            <a href="#" class="featured-card__link">
+              View Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ── Featured Card 3: Paragon Golf Shaft ── -->
+        <div class="featured-card reveal reveal--delay-3">
+          <div class="featured-card__img-wrap">
+            <!-- REPLACE: ./images/paragon.jpg -->
+            <img src="./images/paragondiagram.png" alt="Paragon Golf Shaft">
+            <span class="featured-card__badge">Manufacturing</span>
+          </div>
+          <div class="featured-card__body">
+            <h3 class="featured-card__title">Paragon Golf Shaft</h3>
+            <p class="featured-card__desc">
+              A collet locking sleeve mechanism to make a golf shaft modular and detachable,
+              eliminating travel and storage concerns. Partnering with OEM manufacturers and
+              major golf brands to bring it to market.
+            </p>
+            <!-- REPLACE href -->
+            <a href="/images/golf_shaft_oem_deck_1.pptx" class="featured-card__link">
+              View Project <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="featured__cta">
+        <a href="projects.html" class="btn btn--outline">See All Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer__inner">
+
+      <!-- TuftsBarber logo — click scrolls to top -->
+      <a href="#" class="footer__logo-wrap" aria-label="Back to top">
+        <!-- REPLACE: ./images/tuftsbarber.png -->
+        <img src="./images/tuftsbarber.png" alt="TuftsBarber" class="footer__logo-img">
+        <span class="footer__back-top">↑ Back to Top</span>
+      </a>
+
+      <nav class="footer__links">
+        <a href="aboutme.html"  class="footer__link">About</a>
+        <a href="projects.html" class="footer__link">Projects</a>
+        <a href="./images/Alexander Robbins Resume Feb 2026.pdf" target="_blank" class="footer__link">Resume</a>
+        <a href="https://www.linkedin.com/in/alexander-h-robbins" target="_blank" class="footer__link">LinkedIn</a>
+        <a href="mailto:alexanderrobbins@gmail.com" class="footer__link">Email</a>
+      </nav>
+
+      <div class="footer__divider"></div>
+      <p class="footer__copyright">Copyright &copy; 2026 Alexander Robbins</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════
+       JAVASCRIPT
+       ═══════════════════════════════════════════════ -->
+  <script>
+    // ── Navbar: add .scrolled class after user scrolls down ──
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // ── Mobile hamburger toggle ──
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    // ── Scroll-reveal: watch .reveal elements ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
